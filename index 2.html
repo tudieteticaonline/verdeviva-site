@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Verde Vida – Dietética Natural</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SzlrxWriC3YNugDrD+8R+6S4pW0EGWdC2ArY1Rz+4HeAOQJPrkS4Hkz/lybUe1pZtz7hZljPflxXZH/H+iZqQw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+:root{--primary:#4caf50;--primary-dark:#35833d;--accent:#ffa726;--bg:#f7fff7;--text:#222;--gray:#666}
+*,*::before,*::after{box-sizing:border-box;padding:0;margin:0}
+body{font-family:"Inter",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Poppins",sans-serif;font-weight:700;line-height:1.2}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:1280px;margin:0 auto;padding:0 1rem}
+.btn{display:inline-block;background:var(--primary);color:#fff;padding:.9rem 1.8rem;border-radius:4px;font-weight:600;transition:.2s}
+.btn:hover{background:var(--accent)}
+.topbar{background:var(--primary-dark);color:#fff;font-size:.9rem;text-align:center;padding:.35rem .75rem}
+header{background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05);position:sticky;top:0;z-index:1000}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:.9rem 1rem}
+.logo{font-size:1.7rem;color:var(--primary)}
+.nav-links{display:flex;gap:1.5rem;font-weight:600}
+.nav-links a{color:var(--gray);transition:color .2s}
+.nav-links a:hover{color:var(--primary-dark)}
+.hero{position:relative;height:60vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=1600&q=70') center/cover no-repeat;filter:brightness(.55)}
+.hero-content{position:relative;z-index:1;color:#fff;padding:0 1rem;max-width:700px}
+.hero h1{font-size:clamp(2.4rem,6vw,3.8rem);margin-bottom:.8rem}
+.hero p{font-size:1.15rem;margin-bottom:1.8rem}
+section{padding:4rem 0}
+section h2{font-size:2.3rem;text-align:center;color:var(--primary);margin-bottom:2rem}
+.grid{display:grid;gap:1.8rem}
+@media(min-width:600px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.grid-4{grid-template-columns:repeat(4,1fr)}}
+.card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);display:flex;flex-direction:column;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card-content{padding:1rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.price{color:var(--primary-dark);font-weight:700;margin-top:auto}
+.benefits{display:grid;gap:2rem;text-align:center}
+@media(min-width:680px){.benefits{grid-template-columns:repeat(3,1fr)}}
+.benefit-icon{font-size:2.5rem;color:var(--accent);margin-bottom:.6rem}
+details{border:1px solid #ddd;border-radius:6px;margin-bottom:1rem;background:#fff;padding:1rem 1.2rem}
+summary{font-weight:600;cursor:pointer;list-style:none;position:relative;padding-right:1.5rem}
+summary::after{content:'\f078';font-family:'Font Awesome 6 Free';font-weight:900;position:absolute;right:0;transition:transform .2s}
+details[open] summary::after{transform:rotate(180deg)}
+form{display:grid;gap:1rem;max-width:600px;margin:0 auto}
+input,textarea{padding:.85rem;border:1px solid #ccc;border-radius:4px;font-size:1rem;width:100%}
+footer{background:var(--primary-dark);color:#fff;text-align:center;padding:2.2rem 1rem;margin-top:4rem}
+.whatsapp-btn{position:fixed;bottom:24px;right:24px;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;box-shadow:0 4px 12px rgba(0,0,0,.15);z-index:2000;transition:transform .2s}
+.whatsapp-btn:hover{transform:scale(1.1)}
+</style>
+</head>
+<body>
+<div class="topbar">Envíos GRATIS en CABA/GBA · 3 cuotas sin interés · 10% OFF efectivo</div>
+<header>
+  <div class="nav container">
+    <div class="logo">Verde Vida</div>
+    <nav class="nav-links">
+      <a href="#productos">Productos</a><a href="#beneficios">Beneficios</a><a href="#recetas">Recetas</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Bienestar que Saborea tu Día</h1>
+    <p>Alimentos orgánicos, sin TACC y veganos para nutrir cuerpo y mente mientras cuidamos el planeta.</p>
+    <a href="#productos" class="btn">Explorar Catálogo</a>
+  </div>
+</section>
+<section id="productos" class="container">
+  <h2>Productos Destacados</h2>
+  <div class="grid grid-4">
+    <div class="card"><img src="https://images.unsplash.com/photo-1600180758895-16ad4c934dd1?auto=format&fit=crop&w=800&q=60" alt=""><div class="card-content"><h3>Mix de Frutos Secos</h3><span class="price">$2.900 / 500g</span></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1598045030836-fc4f7e65f57b?auto=format&fit=crop&w=800&q=60" alt=""><div class="card-content"><h3>Quinoa Blanca Premium</h3><span class="price">$3.500 / kg</span></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1615485927833-6ae31c49ccd1?auto=format&fit=crop&w=800&q=60" alt=""><div class="card-content"><h3>Miel Orgánica Raw</h3><span class="price">$3.200</span></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1576564583276-ddeb67b1aa1c?auto=format&fit=crop&w=800&q=60" alt=""><div class="card-content"><h3>Smoothie Verde Detox</h3><span class="price">$1.800</span></div></div>
+  </div>
+</section>
+<section id="beneficios" style="background:#fff5ef;">
+  <div class="container">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="benefits">
+      <div><div class="benefit-icon"><i class="fa-solid fa-seedling"></i></div><h3>Agricultura Orgánica</h3><p>Productos certificados sin pesticidas.</p></div>
+      <div><div class="benefit-icon"><i class="fa-solid fa-truck-fast"></i></div><h3>Envíos 24h</h3><p>Despacho exprés en CABA y GBA.</p></div>
+      <div><div class="benefit-icon"><i class="fa-solid fa-leaf"></i></div><h3>Packaging Compostable</h3><p>Programa refill y envases eco.</p></div>
+    </div>
+  </div>
+</section>
+<section id="recetas" class="container">
+  <h2>Inspiración Saludable</h2>
+  <div class="grid grid-3">
+    <div class="card"><img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f5ad?auto=format&fit=crop&w=800&q=60" alt=""><div class="card-content"><h3>Granola Casera</h3></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=60" alt=""><div class="card-content"><h3>Bowl de Quinoa</h3></div></div>
+    <div class="card"><img src="https://images.unsplash.com/photo-1576564583276-ddeb67b1aa1c?auto=format&fit=crop&w=800&q=60" alt=""><div class="card-content"><h3>Smoothie Verde</h3></div></div>
+  </div>
+</section>
+<section id="faq" class="container">
+  <h2>Preguntas Frecuentes</h2>
+  <details><summary>¿Hacen envíos al interior?</summary><p>Sí, enviamos a todo el país por correo.</p></details>
+  <details><summary>¿Cómo garantizan sin TACC?</summary><p>Productos con sello oficial y depósito separado.</p></details>
+  <details><summary>¿Aceptan envases reutilizables?</summary><p>Traé tus frascos y obtené 5% de descuento.</p></details>
+</section>
+<section id="contacto" class="container">
+  <h2>Contacto</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="_replyto" placeholder="Email" required>
+    <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+</section>
+<footer>&copy; <span id="year"></span> Verde Vida · Dietética Natural</footer>
+<a href="https://wa.me/5491136692791" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
