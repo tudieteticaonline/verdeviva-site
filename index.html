@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dietética Verde Vida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary: #4caf50; /* verde principal */
+        --primary-light: #79d279;
+        --dark: #1e1e1e;
+        --light: #f7fff7;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        background: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+
+      /* ========= ENCABEZADO ========= */
+      header {
+        background: var(--primary);
+        color: #fff;
+        padding: 1rem 0;
+      }
+
+      header nav {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 1rem;
+        font-weight: 600;
+        transition: opacity .2s;
+      }
+
+      nav a:hover { opacity: .8; }
+
+      /* ========= HERO ========= */
+      .hero {
+        text-align: center;
+        padding: 4rem 1rem 5rem;
+        background: #fff;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.2rem, 5vw, 3rem);
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        max-width: 650px;
+        margin: 0 auto 2rem;
+      }
+
+      .btn {
+        background: var(--primary);
+        border: none;
+        color: #fff;
+        padding: .8rem 1.6rem;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background .2s;
+      }
+
+      .btn:hover { background: var(--primary-light); }
+
+      /* ========= SECCIONES ========= */
+      section {
+        padding: 3.5rem 1rem;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      section h2 {
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
+        color: var(--primary);
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      /* SOBRE NOSOTROS */
+      .about {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .about img { border-radius: 8px; }
+
+      @media (min-width: 768px) {
+        .about { flex-direction: row; align-items: center; }
+        .about img, .about div { flex: 1; }
+      }
+
+      /* PRODUCTOS */
+      .products {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,.08);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+
+      .card-content { padding: 1rem; flex: 1; display: flex; flex-direction: column; }
+      .card-content h3 { margin-bottom: .5rem; font-size: 1.1rem; }
+      .price { margin-top: auto; font-weight: 600; color: var(--primary); }
+
+      /* GALERÍA */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+
+      .gallery img { width: 100%; border-radius: 8px; object-fit: cover; }
+
+      /* FORMULARIO */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      input, textarea {
+        padding: .8rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      /* PIE */
+      footer {
+        background: var(--dark);
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ========== ENCABEZADO ========== -->
+    <header>
+      <nav>
+        <div class="logo">Verde Vida</div>
+        <div>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#productos">Productos</a>
+          <a href="#recetas">Recetas</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <h1><span style="color: var(--primary);">Alimentá</span> tu Bienestar</h1>
+      <p>
+        Selección de alimentos naturales, orgánicos y sin TACC para que construyas un estilo de vida saludable, delicioso y sustentable.
+      </p>
+      <a href="#productos" class="btn">Ver catálogo</a>
+    </section>
+
+    <!-- ========== SOBRE NOSOTROS ========== -->
+    <section id="nosotros">
+      <h2>Nuestra Filosofía</h2>
+      <div class="about">
+        <img src="https://placehold.co/500x320?text=Local+Verde+Vida" alt="Frente de la dietética" />
+        <div>
+          <p>
+            En <strong>Verde Vida</strong> creemos que la comida es el combustible de cuerpo y mente. Por eso ofrecemos productos a granel, orgánicos y de comercio justo que respetan tu salud y al planeta.
+          </p>
+          <p>
+            Nuestro equipo te asesora para que encuentres la combinación perfecta de sabores y nutrientes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRODUCTOS DESTACADOS ========== -->
+    <section id="productos">
+      <h2>Productos Destacados</h2>
+      <div class="products">
+        <!-- Cada tarjeta representa un producto: reemplazá imagen, nombre y precio -->
+        <div class="card">
+          <img src="https://placehold.co/300x300?text=Nueces" alt="Nueces Pecán" />
+          <div class="card-content">
+            <h3>Nueces Pecán Orgánicas</h3>
+            <span class="price">$4.500 / kg</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://placehold.co/300x300?text=Quinoa" alt="Quinoa Roja" />
+          <div class="card-content">
+            <h3>Quinoa Roja Premium</h3>
+            <span class="price">$3.200 / kg</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://placehold.co/300x300?text=Miel" alt="Miel Orgánica" />
+          <div class="card-content">
+            <h3>Miel Orgánica Raw 500 g</h3>
+            <span class="price">$2.800</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://placehold.co/300x300?text=Semillas" alt="Mix de Semillas" />
+          <div class="card-content">
+            <h3>Mix de Semillas Energético</h3>
+            <span class="price">$2.100 / kg</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RECETAS ========== -->
+    <section id="recetas">
+      <h2>Ideas & Recetas</h2>
+      <div class="gallery">
+        <img src="https://placehold.co/400x300?text=Granola+Casera" alt="Granola casera" />
+        <img src="https://placehold.co/400x300?text=Bowl+de+Quinoa" alt="Bowl de quinoa" />
+        <img src="https://placehold.co/400x300?text=Smoothie+Verde" alt="Smoothie verde" />
+        <img src="https://placehold.co/400x300?text=Cookies+de+Avena" alt="Galletas avena" />
+      </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Nombre" required />
+        <input type="email" name="_replyto" placeholder="Email" required />
+        <textarea name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+
+    <!-- ========== PIE ========== -->
+    <footer>
+      &copy; <span id="year"></span> Verde Vida. Dietética & Bienestar.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
