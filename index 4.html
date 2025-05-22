@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verde Vida – Dietética Natural</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SzlrxWriC3YNugDrD+8R+6S4pW0EGWdC2ArY1Rz+4HeAOQJPrkS4Hkz/lybUe1pZtz7hZljPflxXZH/H+iZqQw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+:root{--primary:#4caf50;--primary-dark:#2f7633;--accent:#ffa726;--bg:#f6fff6;--text:#222;--gray:#666;--shadow:0 2px 8px rgba(0,0,0,.08);}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Inter",sans-serif;background:var(--bg);color:var(--text);}
+h1,h2,h3{font-family:"Poppins",sans-serif;font-weight:700}
+a{text-decoration:none;color:inherit}
+.container{max-width:1400px;margin:0 auto;padding:0 1rem}
+.top-links{background:#fff;font-size:.85rem;border-bottom:1px solid #eee}
+.top-links .inner{display:flex;justify-content:flex-end;gap:1.5rem;padding:.4rem 1rem;color:var(--gray)}
+header{background:var(--primary);color:#fff;position:sticky;top:0;z-index:1000;box-shadow:var(--shadow)}
+.nav{display:grid;grid-template-columns:180px 1fr 180px;align-items:center;padding:.8rem 1rem}
+.logo{font-size:1.8rem;font-weight:700}
+.nav-center{justify-self:center}
+.nav-links{display:flex;gap:2rem;font-weight:600}
+.nav-links a{color:#fff;border-bottom:3px solid transparent;padding-bottom:.2rem}
+.nav-links a:hover{border-color:#fff}
+.cart-btn{justify-self:end;font-size:1.3rem}
+.search-wrapper{display:flex;justify-content:center;margin:1.2rem 0}
+.search-wrapper input{width:80%;max-width:600px;padding:.75rem 1rem;border:2px solid var(--primary);border-radius:999px 0 0 999px;font-size:1rem}
+.search-wrapper button{background:var(--primary);color:#fff;border:none;padding:.78rem 1.2rem;border-radius:0 999px 999px 0;font-size:1rem;cursor:pointer}
+.hero{position:relative;height:50vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;filter:brightness(.45)}
+.hero-content{position:relative;z-index:1;color:#fff;padding:0 1rem;max-width:800px}
+.hero h1{font-size:clamp(2.6rem,6vw,4rem);margin-bottom:.8rem}
+.hero p{font-size:1.2rem;margin-bottom:1.5rem}
+.btn{display:inline-block;background:var(--primary);color:#fff;padding:.9rem 1.8rem;border-radius:4px;font-weight:600}
+.info-bar{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));padding:2rem 0;text-align:center}
+.info-bar i{font-size:2rem;color:var(--primary);margin-bottom:.6rem}
+.categories{background:#fff;padding:1.5rem 0;box-shadow:var(--shadow);margin-bottom:2.5rem}
+.cat-scroll{display:flex;gap:1rem;overflow-x:auto;padding:0 1rem}
+.cat-btn{flex:0 0 auto;background:var(--primary);color:#fff;padding:.6rem 1.2rem;border-radius:30px;font-size:.9rem;font-weight:600;white-space:nowrap}
+.grid{display:grid;gap:1.6rem}
+@media(min-width:600px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.grid-4{grid-template-columns:repeat(4,1fr)}}
+.card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card-content{padding:1rem;flex:1}
+.price{color:var(--primary-dark);font-weight:700;margin-top:auto}
+.whatsapp-btn{position:fixed;bottom:24px;right:24px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;box-shadow:0 4px 12px rgba(0,0,0,.15);z-index:2000}
+footer{background:var(--primary-dark);color:#fff;text-align:center;padding:2rem 1rem;margin-top:4rem}
+</style>
+</head>
+<body>
+<div class="top-links"><div class="inner"><a href="#">Sucursales</a><a href="#">Quiénes somos</a><a href="#">Contacto</a></div></div>
+<header><div class="nav container"><div class="logo">Verde Vida</div><nav class="nav-center"><div class="nav-links"><a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#recetas">Recetas</a><a href="#contacto">Contacto</a></div></nav><a href="#" class="cart-btn"><i class="fa-solid fa-bag-shopping"></i></a></div></header>
+<div class="search-wrapper"><input placeholder="¿Qué estás buscando?"><button><i class="fa-solid fa-search"></i></button></div>
+<section class="hero"><div class="hero-content"><h1>Especial Tés & Infusiones</h1><p>Aprovechá nuestras ofertas de mayo y descubrí nuevas mezclas.</p><a class="btn" href="#productos">Comprar ahora</a></div></section>
+<div class="container info-bar"><div><i class="fa-solid fa-truck"></i><h4>Envío GRATIS</h4><p>En compras &gt; $50.000</p></div><div><i class="fa-solid fa-clock"></i><h4>Entrega en el Día</h4><p>CABA y AMBA</p></div><div><i class="fa-solid fa-credit-card"></i><h4>Pagá como quieras</h4><p>Crédito · Débito · Transferencia</p></div></div>
+<div class="categories"><div class="cat-scroll"><a class="cat-btn" href="#">Mixes</a><a class="cat-btn" href="#">Frutos Secos</a><a class="cat-btn" href="#">Fruta Desecada</a><a class="cat-btn" href="#">Tés</a><a class="cat-btn" href="#">Semillas</a></div></div>
+<section id="productos" class="container"><h2 style="text-align:center;margin-bottom:1.5rem">Productos Destacados</h2><div class="grid grid-4"><div class="card"><img src="https://images.unsplash.com/photo-1600180758895-16ad4c934dd1?auto=format&fit=crop&w=800&q=60"><div class="card-content"><h3>Mix Premium</h3><span class="price">$2.900 / 500g</span></div></div><div class="card"><img src="https://images.unsplash.com/photo-1598045030836-fc4f7e65f57b?auto=format&fit=crop&w=800&q=60"><div class="card-content"><h3>Quinoa Blanca</h3><span class="price">$3.500 / kg</span></div></div><div class="card"><img src="https://images.unsplash.com/photo-1615485927833-6ae31c49ccd1?auto=format&fit=crop&w=800&q=60"><div class="card-content"><h3>Miel Orgánica</h3><span class="price">$3.200</span></div></div><div class="card"><img src="https://images.unsplash.com/photo-1576564583276-ddeb67b1aa1c?auto=format&fit=crop&w=800&q=60"><div class="card-content"><h3>Smoothie Verde</h3><span class="price">$1.800</span></div></div></div></section>
+<footer>&copy; <span id="year"></span> Verde Vida · Dietética Natural</footer>
+<a href="https://wa.me/5491136692791" class="whatsapp-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
